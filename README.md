@@ -1,1 +1,1 @@
-# cpc-contest-solutions
+# Competitive Programming Course Contest Solutions
