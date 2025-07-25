@@ -10,7 +10,8 @@ tree<pair<long long, int>, null_type,less<pair<long long, int>>, rb_tree_tag,tre
         int ans = 0;
         for(int i = 0; i < nums.size(); i++){
             ps += nums[i];
-            int x = s.order_of_key({ps - lower + 1, -1});
+            int x = s.order_of_key({
+                ps - lower + 1, -1});
             int y = s.order_of_key({ps - upper, -1});
             if(x > y) ans += x - y;
             s.insert({ps, i});
